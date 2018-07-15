@@ -1,0 +1,19 @@
+@model Product
+
+<form asp-action="New" method="POST" asp-controller="Product">
+<input type="hidden" asp-for="Id"/>
+
+<label asp-for="ProductName"></label>
+<input type="text" asp-for="ProductName"/>
+<span asp-validation-for="ProductName"></span>
+
+<label asp-for="Quantity"></label>
+<input type="text" asp-for="Quantity"/>
+<span asp-validation-for="Quantity"></span>
+
+<label asp-for="Price"></label>
+<input type="text" asp-for="Price"/>
+<span asp-validation-for="Price"></span>
+
+<input type="submit" value="Save"/>
+</form>
